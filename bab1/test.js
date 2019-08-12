@@ -121,4 +121,9 @@ const enam = () => {
 	console.log( " ############### end No.6 \n" );
 }
 
+satu();
+dua();
+tiga();
+empat();
+lima();
 enam();
