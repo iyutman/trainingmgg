@@ -57,8 +57,8 @@ const tiga = () => {
   if (bil1 == bil2) {
     console.log(resultBil);
   } else {
-    resultBil * = 3;
-    console.log("Result * 3 = " + resultBi);
+    resultBil *= 3;
+    console.log("Result * 3 = " + resultBil);
   }
   console.log("############### end No.3 \n");
 }
@@ -82,7 +82,7 @@ const empat = () => {
   let time = hours + ':' + minutes + ':' + second;
 
   console.log('Hari ini adalah: ' + dayOfWeek);
-  console.log("aktu sekarang adalah: " + tim);
+  console.log("aktu sekarang adalah: " + time);
   
   console.log("############### end No.4 \n");
 }
@@ -109,12 +109,12 @@ const enam = () => {
    */
   
   let parm = [
-  { name: "Brendan Eich" }, 
-  { name: "Rasmus Lerdorf" }
+    { name: "Brendan Eich" }, 
+    { name: "Rasmus Lerdorf" }
   ];
 
-  parm.forEach(function(element) {
-  element['companyName'] = 'MGG'; 
+  parm.map(function(element) {
+    element['companyName'] = 'MGG'; 
   });
 
   console.log( parm );
