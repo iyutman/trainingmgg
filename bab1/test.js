@@ -1,6 +1,6 @@
 // No.1 
 const satu = () => {
-  let testOne = "tada";
+  const testOne = "tada";
   console.log(testOne);
   console.log("############### end No.1 \n");
 }
@@ -16,7 +16,7 @@ const dua = () => {
       return
     }
     //file exists
-    let ext = fileName.substr(fileName.lastIndexOf('.') + 1);
+    const ext = fileName.substr(fileName.lastIndexOf('.') + 1);
     console.log(ext);
     console.log("############### end No.2 \n");
   })
@@ -48,8 +48,8 @@ const tiga = () => {
     console.log(bil2);
    */
   
-  let bil1 = 1;
-  let bil2 = 2;
+  const bil1 = 1;
+  const bil2 = 2;
   let resultBil = bil1 + bil2;
 
   console.log("Bil 1 : " + bil1 + "\nBil 2 : " + bil2);
@@ -71,15 +71,15 @@ const empat = () => {
   Waktu sekarang adalah: 22:00: 30: 38
    */
   
-  let today = new Date();
-  let day = new Array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu');
-  let dayOfWeek = day[today.getDay()];
+  const today = new Date();
+  const day = new Array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu');
+  const dayOfWeek = day[today.getDay()];
 
-  let hours = today.getHours();
-  let minutes = today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes();
-  let second = today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds();
+  const hours = today.getHours();
+  const minutes = today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes();
+  const second = today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds();
 
-  let time = hours + ':' + minutes + ':' + second;
+  const time = hours + ':' + minutes + ':' + second;
 
   console.log('Hari ini adalah: ' + dayOfWeek);
   console.log("aktu sekarang adalah: " + time);
@@ -89,11 +89,11 @@ const empat = () => {
 
 //  No.5
 const lima = () => {
-  let today = new Date();
+  const today = new Date();
 
-  let dd = today.getDate()
-  let mm = today.getMonth() + 1
-  let yyyy = today.getFullYear()
+  const dd = today.getDate()
+  const mm = today.getMonth() + 1
+  const yyyy = today.getFullYear()
 
   console.log( dd + "/" + mm + "/" + yyyy);
   console.log("############### end No.5 \n");
@@ -108,7 +108,7 @@ const enam = () => {
   [{ name: "Brendan Eich", companyName: "MGG" }, {name: "Rasmus Lerdorf", companyName: "MGG" }]
    */
   
-  let parm = [
+  const parm = [
     { name: "Brendan Eich" }, 
     { name: "Rasmus Lerdorf" }
   ];
