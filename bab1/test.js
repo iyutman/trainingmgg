@@ -95,7 +95,8 @@ const lima = () => {
   const mm = today.getMonth() + 1
   const yyyy = today.getFullYear()
 
-  console.log( dd + "/" + mm + "/" + yyyy);
+  // console.log( dd + "/" + mm + "/" + yyyy);
+  console.log(`${dd}/${mm}/${yyyy}`);
   console.log("############### end No.5 \n");
 }
 
@@ -113,7 +114,13 @@ const enam = () => {
     { name: "Rasmus Lerdorf" }
   ];
 
+  /*
   parm.map(function(element) {
+    element['companyName'] = 'MGG'; 
+  });
+   */
+
+  parm.map( (element) =>  {
     element['companyName'] = 'MGG'; 
   });
 
