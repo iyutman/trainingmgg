@@ -52,13 +52,13 @@ const tiga = () => {
   const bil2 = 2;
   let resultBil = bil1 + bil2;
 
-  console.log("Bil 1 : " + bil1 + "\nBil 2 : " + bil2);
+  console.log(`Bil 1 : ${bil1} \nBil 2 : ${bil2}`);
 
   if (bil1 == bil2) {
     console.log(resultBil);
   } else {
     resultBil *= 3;
-    console.log("Result * 3 = " + resultBil);
+    console.log(`Result * 3 = ${resultBil}`);
   }
   console.log("############### end No.3 \n");
 }
@@ -76,13 +76,12 @@ const empat = () => {
   const dayOfWeek = day[today.getDay()];
 
   const hours = today.getHours();
-  const minutes = today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes();
-  const second = today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds();
+  const minutes = today.getMinutes() < 10 ? `0${today.getMinutes()}` : today.getMinutes();
+  const second = today.getSeconds() < 10 ? `0${today.getSeconds()}` : today.getSeconds();
 
-  const time = hours + ':' + minutes + ':' + second;
 
-  console.log('Hari ini adalah: ' + dayOfWeek);
-  console.log("aktu sekarang adalah: " + time);
+  console.log(`Hari ini adalah: ${dayOfWeek}`);
+  console.log(`aktu sekarang adalah: ${hours}:${minutes}:${second}`);
   
   console.log("############### end No.4 \n");
 }
