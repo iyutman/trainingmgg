@@ -1,0 +1,34 @@
+{
+  "host": "localhost",
+  "port": 4041,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "26566a87a51d5574f783fa0cbe77bde6c1f0969efc06ac0d5ee61bbf2ed7d78619cb0f1239edbb2bffbd27c82c66931f86b02b67d2055631d1f6901689ce2e0b1748ef4d3959f6c27178c6249f1b9fa34116a9776d8f7d823e49637428d6fb40bfda8d25f260d5b307281f93c6f269ed87b0bb2e76455efddb88e3a737e2082bb8b05f49c103ec6d21ea2af11e47ac90fbdd95253e5b2c823a4c0be73951d8c3067db1028c40ccae9b8cd6cd5fab708e3c610a5adb39de85022fd73f84a1a7fea9c4fcf9d7cb1c8485cd04bf9363f211278a6f789bcce523d609f086d1273e11228d934b592e50e599dc3c5cf53291fe37f6c38da1e37e6356bee70550300aef",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/inventoryApp"
+}
